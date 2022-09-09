@@ -1,0 +1,20 @@
+@use '_var';
+@import '_header';
+
+main {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.column-1 {
+    width: 65%;
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: column;
+}
