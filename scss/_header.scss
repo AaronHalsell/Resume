@@ -1,7 +1,12 @@
+@use '_var';
+
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cyber.jpg');
+    background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: var.$secondary-color;
+    height: 20vh;
 }

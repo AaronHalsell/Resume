@@ -1,6 +1,15 @@
 @use '_var';
 @import '_header';
 
+html {
+    font-family: var.$primary-font;
+    font-weight: var.$primary-font-weight;
+}
+
+body{
+    background-color: #011B24;
+}
+
 main {
     margin: 0 auto;
     width: 1200px;
@@ -12,6 +21,12 @@ main {
 
 .column-1 {
     width: 65%;
+    background-color: var.$secondary-background;
+    color: var.$secondary-color;
+}
+
+.column-2 {
+    background-color: var.$secondary-color;
 }
 
 .contact-info {
