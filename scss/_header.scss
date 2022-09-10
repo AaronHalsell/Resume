@@ -4,9 +4,26 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cyber.jpg');
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     color: var.$secondary-color;
     height: 20vh;
+}
+
+.intro {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+    }
+
+.intro h1 {
+    font-size: 45px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.intro h2 {
+    margin-top: 0;
+    font-weight: 400;
 }
