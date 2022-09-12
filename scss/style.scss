@@ -1,25 +1,30 @@
 @use '_var';
 @import '_header';
-
+@import '_left';
+@import 'right';
 
 @mixin heading {
     font-weight: var.$primary-font-weight;
     margin: 20px 0;
-    font-size: 22px;
+    font-size: 25px;
 }
 
-html, h2, h3, p {
+html, h2, p {
     font-family: var.$primary-font;
     font-weight: var.$primary-font-weight;
 }
 
-h1, h2, h3 {
+.uppercase {
     text-transform: uppercase;
 }
 
-h2, h3 {
-    text-transform: uppercase;
+h2 {
+    @extend .uppercase;
     @include heading;
+}
+
+h3 {
+    font-weight: 600;
 }
 
 body{
@@ -42,16 +47,21 @@ main {
     color: var.$secondary-color;
 }
 
-.avatar img {
+.avatar img  {
     width: 368px;
 }
 
-.column-2 {
-    background-color: var.$secondary-color;
+.tech img {
+    width: 325px;
 }
 
-.skills, .column-2 {
+.left-content {
     padding: 20px
+}
+
+.column-2 {
+    @extend .left-content;
+    background-color: var.$secondary-color;
 }
 
 .contact-info {

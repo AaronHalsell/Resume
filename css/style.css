@@ -24,23 +24,45 @@
 
 .intro h2 {
   margin-top: 0;
-  font-weight: 400;
 }
 
-html, h2, h3, p {
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-txt {
+  margin-left: 15px;
+}
+
+h3 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.job {
+  margin-top: 0px;
+  font-style: italic;
+}
+
+html, h2, p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-h1, h2, h3 {
+.uppercase, h2 {
   text-transform: uppercase;
 }
 
-h2, h3 {
-  text-transform: uppercase;
+h2 {
   font-weight: 400;
   margin: 20px 0;
-  font-size: 22px;
+  font-size: 25px;
+}
+
+h3 {
+  font-weight: 600;
 }
 
 body {
@@ -67,12 +89,16 @@ main {
   width: 368px;
 }
 
-.column-2 {
-  background-color: #fff;
+.tech img {
+  width: 325px;
 }
 
-.skills, .column-2 {
+.left-content, .column-2 {
   padding: 20px;
+}
+
+.column-2 {
+  background-color: #fff;
 }
 
 .contact-info {
