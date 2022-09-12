@@ -1,9 +1,25 @@
 @use '_var';
 @import '_header';
 
-html {
+
+@mixin heading {
+    font-weight: var.$primary-font-weight;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+html, h2, h3, p {
     font-family: var.$primary-font;
     font-weight: var.$primary-font-weight;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    @include heading;
 }
 
 body{
@@ -28,6 +44,10 @@ main {
 
 .column-2 {
     background-color: var.$secondary-color;
+}
+
+.skills, .column-2 {
+    padding: 20px
 }
 
 .contact-info {

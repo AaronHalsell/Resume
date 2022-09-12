@@ -3,7 +3,7 @@
   background-position: center;
   background-size: cover;
   color: #fff;
-  height: 20vh;
+  height: 25vh;
 }
 
 .intro {
@@ -16,8 +16,8 @@
 }
 
 .intro h1 {
-  font-size: 45px;
-  margin-bottom: 0;
+  font-size: 50px;
+  margin: 0;
   line-height: 1;
 }
 
@@ -26,9 +26,20 @@
   font-weight: 400;
 }
 
-html {
+html, h2, h3, p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 22px;
 }
 
 body {
@@ -53,6 +64,10 @@ main {
 
 .column-2 {
   background-color: #fff;
+}
+
+.skills, .column-2 {
+  padding: 20px;
 }
 
 .contact-info {
