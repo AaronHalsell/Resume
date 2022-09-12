@@ -1,3 +1,8 @@
+.contact-info {
+    display: flex;
+    flex-flow: column;
+}
+
 .contact {
     display: flex;
     align-items: center;
@@ -6,4 +11,16 @@
 
 .contact-txt {
     margin-left: 15px;
+}
+
+.avatar img  {
+    width: 368px;
+}
+
+.tech img {
+    width: 325px;
+}
+
+.left-content {
+    padding: 20px
 }

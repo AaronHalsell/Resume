@@ -23,10 +23,6 @@ h2 {
     @include heading;
 }
 
-h3 {
-    font-weight: 600;
-}
-
 body{
     background-color: var.$secondary-background;
 }
@@ -41,30 +37,50 @@ main {
     display: flex;
 }
 
+
 .column-1 {
     width: 65%;
     background-color: var.$primary-color;
     color: var.$secondary-color;
 }
 
-.avatar img  {
-    width: 368px;
-}
-
-.tech img {
-    width: 325px;
-}
-
-.left-content {
-    padding: 20px
-}
-
 .column-2 {
     @extend .left-content;
     background-color: var.$secondary-color;
+    color: var.$primary-color;
 }
 
-.contact-info {
-    display: flex;
-    flex-flow: column;
+.education-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        width: auto;       
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-content {
+        display: initial;
+    }
+    .column-1 {
+        width: auto;
+        display: flex
+    }
+
+    .education-1 {
+        display: none;
+    }
+
+    .education-2 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .column-1 {
+        flex-flow: column;
+        align-items: center;
+    }
 }
