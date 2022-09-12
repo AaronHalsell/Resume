@@ -23,13 +23,13 @@ h2, h3 {
 }
 
 body{
-    background-color: #011B24;
+    background-color: var.$secondary-background;
 }
 
 main {
     margin: 0 auto;
     width: 1200px;
-    box-shadow:  rgba(7, 76, 91, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .main-content {
@@ -38,8 +38,12 @@ main {
 
 .column-1 {
     width: 65%;
-    background-color: var.$secondary-background;
+    background-color: var.$primary-color;
     color: var.$secondary-color;
+}
+
+.avatar img {
+    width: 368px;
 }
 
 .column-2 {
